@@ -127,9 +127,23 @@ link = soup.find('a', class_="video_magosh")["href"]
 ```python
 # ... Выше должен быть запрос на полечение страницы сайта
 
+# Создаем объект парсера
 soup = BeautifulSoup(rescponse.text, features="html.parser")
+#Ищем div в котором лежит наш p с текстом заголовка
 content_description_block = soup.find('div', class_='content_description')
+# Внутри нашего div ищем наш p и берем от него только текст
 headline_text = content_description_block.find('p').text
 ```
-
 Таким образом, в переменной headline_text будет тот заголовок, который мы и искали
+
+Можно записать немного короче:
+```python
+# ... Выше должен быть запрос на полечение страницы сайта
+
+# Создаем объект парсера
+soup = BeautifulSoup(rescponse.text, features="html.parser")
+#Ищем div, а в нем сразу ищем наш p с текстом заголовка
+content_description_block = soup.find('div', class_='content_description').find('p').text
+```
+Но смотрите, чтобы строчка не была слишком длинной и сложно читаемой)
+
