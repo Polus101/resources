@@ -25,7 +25,7 @@ print(file_contents)
 ```Python
 import json
 
-with open("myfile.txt", "r", encoding="ваша кодировка") as my_file:
+with open("myfile.json", "r", encoding="ваша кодировка") as my_file:
   file_contents = my_file.read()
 
 file_contents = json.loads(file_contents)
