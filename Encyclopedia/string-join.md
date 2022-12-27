@@ -20,7 +20,7 @@ line = 'Продукты к покупке: '
 products = ['яблоки', 'бананы', 'колбаса', 'сыр', 'молоко']
 
 for product in products:
-  line += f'\n - {product}'
+  line += f'\n- {product}'
   
 print(line)
 ```
