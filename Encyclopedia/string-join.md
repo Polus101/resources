@@ -30,8 +30,7 @@ print(line)
 line = "Продукты к покупке: "
 products = ["яблоки", "бананы", "колбаса", "сыр", "молоко"]
 
-products.insert(0, line)
-line = "\n- ".join(products)
+line = line + "\n- ".join(products)
 
 print(line)
 ```
