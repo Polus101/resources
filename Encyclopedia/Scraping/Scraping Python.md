@@ -140,13 +140,13 @@ link = soup.find('a', class_="video_magosh")["href"]
 ## Пример
 **Задача:** Допустим есть сайт, с которого нам необходимо достать заголовок `Легендарный командный шутер компании Valve`.
 
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Scrapping/img/csgo_headline2_text.png" alt="пример сайта" width="800"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Scraping/img/csgo_headline2_text.png" alt="пример сайта" width="800"/>
 
 **Решение:**
 
 1. Определим в каком блоке находится заголовок
 
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Scrapping/img/headline2_tag.png" alt="пример сайта" width="300"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Scraping/img/headline2_tag.png" alt="пример сайта" width="300"/>
 
 2. Он находится в тэге `<p>`, который находится внутри `<div class="content_description">`
 
