@@ -13,7 +13,7 @@
 **Эти мини-виртуальные машины и есть контейнеры**
 
 <p align="center">
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/container.png" style="width:60%"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/container.png" style="width:30%"/>
 </p>
 
 *Контейнеры так же максимально оптимизированы - например, все контейнеры используют общее ядро и дисковое пространство вместо эмуляции отдельно для каждого контейнера*
@@ -21,7 +21,7 @@
 
 
 ## Docker Daemon
-Докер `Демон` или `Служба`. Вы его не видите, Вы о нем не думаете, Вы его не замечаете, но именно он обрабатывает все операции связанные с контенерами. 
+Докер `Демон` или `Служба`. Вы его не видите, Вы о нем не думаете, Вы его не замечаете, но именно он обрабатывает все операции связанные с контейнерами. 
 
 Создание, удаление, переименование, запуск, остановка, работа с дисками, сетями, образами и т.д.
 
@@ -34,10 +34,10 @@
 ## Docker Client
 Тут все просто - клиент - это `докер терминал`, в который вы вводите команды. С помощью него вы даете распоряжения `Службе` докер, сделать что-то. 
 
-Например, создать для для Вас новый контейнер)
+Например, создать для Вас новый контейнер)
 
 <p align="center">
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/client.png" style="width:60%"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/client.png" style="width:50%"/>
 </p>
 
 
@@ -50,7 +50,7 @@ Docker Desktop - то, что Вы больше всего видите пере
 
 Помимо того, что это Ваш графический интерфейс, это еще и минималистичная виртуальная машина Linux.
 
-Дело в том, что Docker работет только под Linux, поэтому, если вы работаете на Windows, Docker Desktop приходится создавать виртуалку Linux для своей работы. Именно это и происходит, когда Вы запускаете программу - Вы видите сообщение `Running Docker Engine` - значит, запускаются все компоненты, включая виртуалку Linux
+Дело в том, что Docker работает только под Linux, поэтому, если вы работаете на Windows, Docker Desktop приходится создавать виртуалку Linux для своей работы. Именно это и происходит, когда Вы запускаете программу - Вы видите сообщение `Running Docker Engine` - значит, запускаются все компоненты, включая виртуалку Linux
 
 <p align="center">
 <img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/desktop.png" style="width:60%"/>
@@ -58,7 +58,7 @@ Docker Desktop - то, что Вы больше всего видите пере
 
 
 ## Docker Host
-Докер хостом называеют машину, на которой работает докер. Тоесть `Ваш компьютер`! Ну или `сервер`, на котором вы запустите свой сайт, бота или любой другой сервис
+Докер хостом называют машину, на которой работает докер. То есть `Ваш компьютер`! Ну или `сервер`, на котором вы запустите свой сайт, бота или любой другой сервис
 
 <p align="center">
 <img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/host.png" style="width:60%"/>
@@ -68,27 +68,27 @@ Docker Desktop - то, что Вы больше всего видите пере
 ## Docker Image
 Docekr Image переводится как докер образ. И это действительно образ! `Образ контейнера`!
 
-Как мы и говорили,контейнер - это мини-виртуальная машина для вашего сервиса (проекта). Любой программе, которую Вы писали, для работы нужны как минимум Python и определенные скачанные библиотеки
+Как мы и говорили, контейнер - это мини-виртуальная машина для вашего сервиса (проекта). Любой программе, которую Вы писали, для работы нужны как минимум Python и определенные скачанные библиотеки
 
 Образ - это `описание того, что будет в Вашем контейнере`. По сути - что необходимо Вашей программе для работы. Как `шаблон`, по которому создается контейнер со всем необходимым для программы
 
 *На основе одного образа (шаблона) можно создавать сколько угодно контейнеров, что достаточно удобно*
 
 <p align="center">
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/image.png" style="width:60%"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/image.png" style="width:80%"/>
 </p>
 
 ## Docker Repository
 Вы уже пользовались Git и GitHub, поэтому знаете, что там репозиторий - это хранилище разных версий вашего проекта. 
-Репозиторий докер - тоже самое - это `хранилище разных версий образа`
+Репозиторий докер - то же самое - это `хранилище разных версий образа`
 
 Так же, как и с репозиториями Git, репозитории Docker могут быть локальными (находиться у Вас на компьютере) и удаленными (находиться в облаке)
 
 Самое популярное облако для Git - это GitHub. Ну а для Docker - это `DockerHub`.
 
 <p align="center">
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/rep.png" style="width:60%"/>
-<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/rep2.png" style="width:60%"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/rep.png"/>
+<img src="https://github.com/Polus101/resources/blob/master/Encyclopedia/Docker/img/rep2.png"/>
 </p>
 
 **Вот и все! Это финальная схема работы Docker**
