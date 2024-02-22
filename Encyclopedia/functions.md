@@ -33,7 +33,7 @@ def my_function(): #Создание функции
 Функция, которая возводит число во вторую степень
 ```Python
 def square(a): #Создание функции
-  sqare_number = a * a
+  square_number = a * a
   return square_number
   
 print(square(5)) #Вызов функции
@@ -52,7 +52,7 @@ print(square(5)) #Вызов функции
 - Переменные извне необходимо передавать аргументами:
 ```Python
 def square(a): #Создание функции
-  sqare_number = a * a
+  square_number = a * a
   return square_number
 
 abc = 10
