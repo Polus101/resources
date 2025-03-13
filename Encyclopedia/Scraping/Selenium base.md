@@ -56,6 +56,8 @@ element = driver.find_element(By.ID, 'element_id')
 ```python
 element = driver.find_element(By.CLASS_NAME, 'element_class')
 ```
+Заметьте, что в bs4 можно было сразу указать, какой тэг мы ищем. Тоесть мы могли искать одновременно по тэгу и классу `soup.find('div', class_="element_class")`
+В selenium такой возможности, к сожалению, нет
 - По имени (name) элемента. Такие элементы встречаются редко, но все же. Например: `<input name="user_FIO" type="text" value="user name" />`
 ```python
 element = driver.find_element(By.NAME, 'user_FIO')
@@ -100,6 +102,13 @@ element = driver.find_element(By.XPATH, '//*[@id="app"]/div[2]/p')
 
 Чтобы узнать XPath тэга, наведитесь в консоли разработчика и нажмите правой кнопкой мыши. После выберите `copy` -> `copy XPath`
 
+### Поиск элемента внутри другого элемента
+В bs4 мы могли сначала найти какой-то `div` (например), а затем внутри него найти что то еще. В selenium так же есть эта возможность:
+```python
+some_div = driver.find_element(By.XPATH, '//*[@id="app"]/div[2]/div[3]/div)
+another_h2_inside = some_div.find_element(By.TAG_NAME, 'h2')
+```
+Здесь мы вначале нашли какой то див, а затем нашли в нем какой то h2. Тоесть методы поиска `find_element` и `find_elements` можно применять и к самим найденным элементам
 
 ## Получение информации из найденного элемента
 После того, как мы нашли элемент, мы можем узнать информацию о нем:
