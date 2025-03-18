@@ -160,7 +160,29 @@ driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () =>
 Все или хотя бы (90%) показателей должны быть зелеными
 
 ### Как обойти проверку
+Помимо представленных выше опций запуска, некоторые из которых позволяют обойти антибот проверки, есть так же дополнительная библиотека, которая позволяет сделать Selenium driver максимально напоминающим реальный браузер. Библиотека `selenium_stealth`
 
+Ее необходимо скачать и установить:
+```python
+pip install selenium_stealth
+```
+И импортировать:
+```python
+from selenium_stealth import stealth
+```
+
+Далее необходимо вызвать функцию `slealth` и передать ей аргументом наш `driver`. Учтите, что функция ничего не возвращает, поэтоу сохранять ее результат в переменную не нужно. Функция делает изменения в нашей переменной `driver`:
+```python
+stealth(driver,
+        languages=["en-US", "en"],
+        vendor="Google Inc.",
+        platform="Win64",
+        webgl_vendor="Intel Inc.",
+        renderer="Intel Iris OpenGL Engine",
+        fix_hairline=True,
+        )
+```
+platform, webgl_vendor и renderer можете указать другие настройки, но необязательно
 
 
 
