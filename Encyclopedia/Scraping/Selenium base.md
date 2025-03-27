@@ -121,6 +121,10 @@ element.tag_name
 ```python
 element.get_dom_attribute('class')
 ```
+или
+```python
+element.get_attribute('class')
+```
 Обратите внимание: если заданного атрибута у тэга нет, метод вернет `None`
 - Можем получить текст элемента
 ```python
