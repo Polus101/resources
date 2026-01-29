@@ -49,7 +49,7 @@ with open("myfile.json", "r", encoding="ваша кодировка") as my_file
 file_contents = json.loads(file_contents)
 ```
 
-##Запись в json файл
+## Запись в json файл
 Для записи в json файл используется простой код. В примере ниже в файл `myfile.json` запишется список из переменной `names`
 
 ```python
